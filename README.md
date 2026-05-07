@@ -48,6 +48,14 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
+## Demo
+
+This project demonstrates:
+- Admin authentication
+- CRUD blog management
+- AJAX search/filter
+- Responsive UI
+- Image upload support
 
 ## Author
 
