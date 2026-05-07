@@ -1,0 +1,101 @@
+body{
+     background: red !important;
+    
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background-color: #0f172a !important;
+}
+
+.navbar .btn:hover{
+    transform: translateY(-2px);
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.main-heading{
+    animation: fadeDown 0.8s ease;
+}
+@keyframes fadeDown{
+
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.btn{
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+
+.btn-primary{
+    background-color: #2563eb;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #1d4ed8;
+}
+
+.blog-card{
+    background: #92b3f1;
+    border-radius: 18px;
+    overflow: hidden;
+    border: none;
+    transition: all 0.35s ease;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+
+    animation: fadeUp 0.7s ease;
+}
+
+.blog-card:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 20px 40px rgba(37,99,235,0.18);
+}
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.blog-image{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.search-box,
+.form-select{
+    height: 50px;
+}
+
+.blog-image{
+    width: 75%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
