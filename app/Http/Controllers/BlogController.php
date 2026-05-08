@@ -15,9 +15,9 @@ class BlogController extends Controller
 
     public function create()
     {
-        if (!session('admin_logged_in')) {
-       return redirect('/login');
-   }
+        //if (!session('admin_logged_in')) {
+       //return redirect('/login');
+   //}
         return view('admin.create');
     }
 
@@ -42,9 +42,9 @@ class BlogController extends Controller
     }
     public function edit($id)
 {
-    if (!session('admin_logged_in')) {
-    return redirect('/login');
-   }
+   // if (!session('admin_logged_in')) {
+   // return redirect('/login');
+   //}
     $blog = Blog::findOrFail($id);
 
     return view('admin.edit', compact('blog'));
@@ -74,9 +74,9 @@ public function update(Request $request, $id)
 
 public function delete($id)
 {
-    if (!session('admin_logged_in')) {
-    return redirect('/login');
-   }
+    //if (!session('admin_logged_in')) {
+   // return redirect('/login');
+  // }
     $blog = Blog::findOrFail($id);
 
     $blog->delete();
